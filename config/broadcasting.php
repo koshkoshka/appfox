@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('BROADCAST_DRIVER', 'null'),
+    'default' => env('BROADCAST_DRIVER', 'echo'),
 
     /*
     |--------------------------------------------------------------------------
@@ -61,9 +61,9 @@ return [
 
         'echo' => [
             'driver' => 'pusher',
-            'key' => env('ECHO_APP_KEY'),
+            'key' => env('ECHO_APP_KEY','da93bd71c4968cc4a3f14fa4b542009f'),
             'secret' => '',
-            'app_id' => env('ECHO_APP_ID'),
+            'app_id' => env('ECHO_APP_ID','d7aa89b2972641e4'),
             'options' => [
                 'host' => 'localhost',
                 'port' => 6001,
